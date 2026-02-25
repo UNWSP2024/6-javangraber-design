@@ -1,5 +1,5 @@
 # Programmer: Javan Graber
-# Date: 2/24/2026
+# Date: 2/25/2026
 # Program #3: Tax Rate
 # A retail company must file a monthly sales tax report listing the total sales for the month,
 # and the amount of state and county sales tax collected.
@@ -32,15 +32,15 @@ def main():
 
     # Call for the county tax function and display the total county sales tax
     total_county_sales_tax = calculate_county_tax(monthly_sales)
-    print(f'The total county sales tax is {total_county_sales_tax:.2f}')
+    print(f'The total county sales tax is ${total_county_sales_tax:.2f}')
 
     # Call for the state tax function and display the total state sales tax
     total_state_sales_tax = calculate_state_tax(monthly_sales)
-    print(f'The total state sales tax is {total_state_sales_tax:.2f}')
+    print(f'The total state sales tax is ${total_state_sales_tax:.2f}')
 
     # Calculate the total tax by adding the state and county sales tax
     total_tax = total_county_sales_tax + total_state_sales_tax
-    print(f'The total sales tax is {total_tax:.2f}')
+    print(f'The total sales tax is ${total_tax:.2f}')
 
 # Call for the main function
 main()
